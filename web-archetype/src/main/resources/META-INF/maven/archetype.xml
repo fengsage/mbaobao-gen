@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype>
+	<id>web-archetype</id>
+	<sources>
+		<!-- util -->
+		<source>src/main/java/util/Constants.java</source>
+		<source>src/main/java/util/CookieUtil.java</source>
+		<source>src/main/java/util/MD5Util.java</source>
+		<source>src/main/java/util/PropertiesHelp.java</source>
+		<source>src/main/java/util/StringUtil.java</source>
+		<!-- controller -->
+		<source>src/main/java/web/WebController.java</source>
+	</sources>
+	<resources>
+		<resource>src/main/resources/properties/config.properties</resource>
+		<resource>src/main/resources/properties/jdbc.properties</resource>
+		<resource>src/main/resources/spring/spring-dao-config.xml</resource>
+		<resource>src/main/resources/spring/spring-datasources.xml</resource>
+		<resource>src/main/webapp/WEB-INF/web.xml</resource>
+	</resources>
+</archetype>
+
