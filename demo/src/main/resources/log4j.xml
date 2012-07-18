@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!-- Log4j 把日志进行分级分开来打以后方便进行日志排除错误 -->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- ===== [屏幕Appender] ===== -->
+	<appender name="DEFAULT-CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH\:mm\:ss}] [%t] [%p] - %l | %m%n" />
+		</layout>
+	</appender>
+	<!-- [INFO Appender] -->
+	<appender name="INFO-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="/home/admin/output/logs/javalog/demo/info.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<param name="threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd hh:mm:ss a} : %p [%t]%F.%M()%c - %m%n" />
+		</layout>
+	</appender>
+	<!-- [DEBUG Appender] -->
+	<appender name="DEBUG-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="/home/admin/output/logs/javalog/demo/debug.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<param name="threshold" value="debug" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd hh:mm:ss a} : %p [%t]%F.%M()%c - %m%n" />
+		</layout>
+	</appender>
+	<!-- [WARN Appender] -->
+	<appender name="WARN-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="/home/admin/output/logs/javalog/demo/warn.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<param name="threshold" value="warn" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd hh:mm:ss a} : %p [%t]%F.%M()%c - %m%n" />
+		</layout>
+	</appender>
+	<!-- [ERROR Appender] -->
+	<appender name="ERROR-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="/home/admin/output/logs/javalog/demo/error.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<param name="threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd hh:mm:ss a} : %p [%t]%F.%M()%c - %m%n" />
+		</layout>
+	</appender>
+	<!-- [公共Appender] 汇总性能 -->
+	<appender name="MONITOR-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="/home/admin/output/logs/javalog/demo/monitor.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<param name="threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss a} : %p [%t]%M() - %m%n" />
+		</layout>
+	</appender>
+	<!--应用的日志 打入syslog-ng -->
+	<appender name="syslogNG" class="com.mbaobao.log4j.extra.MbbSyslogAppender">
+		<param name="SyslogHost" value="logserver.mbbidc.net" />
+		<param name="Facility" value="local5" />
+		<param name="Header" value="true" />
+		<param name="AppDomain" value="demo" />
+		<param name="FacilityPrinting" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %l -%t %x - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="ERROR" />
+		</filter>
+	</appender>
+	<logger name="MONITOR" additivity="false">
+		<level value="info" />
+		<appender-ref ref="MONITOR-APPENDER" />
+	</logger>
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="DEFAULT-CONSOLE" />
+		<appender-ref ref="INFO-APPENDER" />
+		<appender-ref ref="ERROR-APPENDER" />
+		<appender-ref ref="syslogNG" />
+	</root>
+</log4j:configuration>

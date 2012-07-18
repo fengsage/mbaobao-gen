@@ -10,6 +10,6 @@ Mbaobao-person-gen
 
 * web-archetype 一个简单的springmvc+mybatis搭建工程。
 
-    mvn archetype:generate -DarchetypeGroupId=com.mbaobao  -DarchetypeArtifactId=web-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.mbaobao.vip -DartifactId=demo-demo
+    mvn archetype:generate -DarchetypeGroupId=com.mbaobao.gen  -DarchetypeArtifactId=web-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.mbaobao.vip -DartifactId=demo
 
 
