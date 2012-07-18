@@ -13,7 +13,7 @@
 	<!-- [INFO Appender] -->
 	<appender name="INFO-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file"
-			value="/home/admin/output/logs/javalog/access-control/info.log" />
+			value="/home/admin/output/logs/javalog/${artifactId}/info.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="utf-8" />
 		<param name="threshold" value="info" />
@@ -25,7 +25,7 @@
 	<!-- [DEBUG Appender] -->
 	<appender name="DEBUG-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file"
-			value="/home/admin/output/logs/javalog/access-control/debug.log" />
+			value="/home/admin/output/logs/javalog/${artifactId}/debug.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="utf-8" />
 		<param name="threshold" value="debug" />
@@ -37,7 +37,7 @@
 	<!-- [WARN Appender] -->
 	<appender name="WARN-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file"
-			value="/home/admin/output/logs/javalog/access-control/warn.log" />
+			value="/home/admin/output/logs/javalog/${artifactId}/warn.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="utf-8" />
 		<param name="threshold" value="warn" />
@@ -49,7 +49,7 @@
 	<!-- [ERROR Appender] -->
 	<appender name="ERROR-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file"
-			value="/home/admin/output/logs/javalog/access-control/error.log" />
+			value="/home/admin/output/logs/javalog/${artifactId}/error.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="utf-8" />
 		<param name="threshold" value="error" />
@@ -61,7 +61,7 @@
 	<!-- [公共Appender] 汇总性能 -->
 	<appender name="MONITOR-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file"
-			value="/home/admin/output/logs/javalog/access-control/monitor.log" />
+			value="/home/admin/output/logs/javalog/${artifactId}/monitor.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="utf-8" />
 		<param name="threshold" value="info" />

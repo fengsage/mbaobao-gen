@@ -2,6 +2,8 @@
 <archetype>
 	<id>web-archetype</id>
 	<sources>
+		<!-- dao -->
+		<source>src/main/java/dao/DemoDao.java</source>
 		<!-- util -->
 		<source>src/main/java/util/Constants.java</source>
 		<source>src/main/java/util/CookieUtil.java</source>
@@ -12,11 +14,22 @@
 		<source>src/main/java/web/WebController.java</source>
 	</sources>
 	<resources>
+		<!-- dao -->
+		<resource>src/main/resources/sql-mapper/DemoDaoMapper.xml</resource>
+		<!-- resources -->
+		<resource>src/main/resources/config/tools.xml</resource>
 		<resource>src/main/resources/properties/config.properties</resource>
 		<resource>src/main/resources/properties/jdbc.properties</resource>
+		<resource>src/main/resources/properties/velocity.properties</resource>
 		<resource>src/main/resources/spring/spring-dao-config.xml</resource>
 		<resource>src/main/resources/spring/spring-datasources.xml</resource>
+		<resource>src/main/resources/spring/spring-servlet.xml</resource>
+		<resource>src/main/resources/log4j.xml</resource>
+		<!-- WEB-INF -->
 		<resource>src/main/webapp/WEB-INF/web.xml</resource>
+		<resource>src/main/webapp/WEB-INF/velocityTemplates/layout/layout.vm</resource>
+		<resource>src/main/webapp/WEB-INF/velocityTemplates/macros/macros.vm</resource>
+		<resource>src/main/webapp/WEB-INF/velocityTemplates/index.vm</resource>
 	</resources>
 </archetype>
 
