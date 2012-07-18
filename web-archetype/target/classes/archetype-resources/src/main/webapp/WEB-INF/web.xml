@@ -2,6 +2,7 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
 	<display-name>${artifactId} project</display-name>
 	<context-param>
 		<param-name>webAppRootKey</param-name>
@@ -9,9 +10,9 @@
 	</context-param>
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
-		<param-value>/WEB-INF/classes/log4j.xml</param-value>
+		<param-value>classpath:log4j.xml</param-value>
 	</context-param>
-
+	
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -39,7 +40,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring/spring-*.xml</param-value>
+			<param-value>classpath:spring/urlhandler.xml</param-value>
         </init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

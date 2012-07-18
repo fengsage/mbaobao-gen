@@ -23,7 +23,7 @@
 		<resource>src/main/resources/properties/velocity.properties</resource>
 		<resource>src/main/resources/spring/spring-dao-config.xml</resource>
 		<resource>src/main/resources/spring/spring-datasources.xml</resource>
-		<resource>src/main/resources/spring/spring-servlet.xml</resource>
+		<resource>src/main/resources/spring/urlhandler.xml</resource>
 		<resource>src/main/resources/log4j.xml</resource>
 		<!-- WEB-INF -->
 		<resource>src/main/webapp/WEB-INF/web.xml</resource>
