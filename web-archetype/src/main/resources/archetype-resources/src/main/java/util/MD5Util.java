@@ -14,7 +14,7 @@ public class MD5Util {
 	private static Logger	DATABASE	= Logger.getLogger("DATABASE");
 	
 	/**
-	 * md5后台管理用户
+	 * md5
 	 * @param plainText
 	 * @return
 	 */
@@ -38,8 +38,8 @@ public class MD5Util {
 			}
 			result = buf.toString();// 32位的加密
 		} catch (NoSuchAlgorithmException e) {
-			LOG.error("MD5Util类的md5方法出错：", e);
-			DATABASE.error("MD5Util类的md5方法出错：", e);
+			LOG.error("md5 fail：", e);
+			DATABASE.error("md5 fail：", e);
 		}
 		return result;
 	}
@@ -51,7 +51,7 @@ public class MD5Util {
 	 */
 	public final static String EncoderByMd5(String s) {
 		if (LOG.isInfoEnabled()) {
-			LOG.info("加密的字符串：" + s);
+			LOG.info("encrypt md5：" + s);
 		}
 		char hexDigits[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd',
 				'e', 'f' };
@@ -71,16 +71,16 @@ public class MD5Util {
 			}
 			return new String(str);
 		} catch (Exception e) {
-			LOG.error("MD5Util类的EncoderByMd5方法md5加密出错：" + s, e);
-			DATABASE.error("MD5Util类的EncoderByMd5方法md5加密出错：" + s, e);
+			LOG.error("encrypt md5 fail：" + s, e);
+			DATABASE.error("encrypt md5 fail：" + s, e);
 			return null;
 		}
 	}
 	
 	/**
-	 * 判断用户密码是否正确
+	 * chck password
 	 * @param newStr
-	 *        用户输入的密码
+	 *        no encrypt password
 	 * @param oldMD5Str
 	 * 
 	 * @return
@@ -92,11 +92,5 @@ public class MD5Util {
 		} else {
 			return false;
 		}
-	}
-	
-	public static void main(String[] args) {
-		System.out.println("duixia的MD5加密后：\n" + MD5Util.EncoderByMd5("duixia"));
-		System.out.println("http://www.baidu.com/的MD5加密后：\n"
-							+ MD5Util.EncoderByMd5("http://www.baidu.com/"));
 	}
 }

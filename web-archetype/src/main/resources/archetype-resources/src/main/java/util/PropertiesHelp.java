@@ -39,13 +39,13 @@ public class PropertiesHelp {
 			}
 			
 		} catch (IOException e) {
-			LOG.error(fileName + "读取失败！");
+			LOG.error(fileName + "read properties fail！");
 		} finally {
 			try {
 				if (in != null)
 					in.close();
 			} catch (IOException e) {
-				LOG.error(fileName + "关闭失败！");
+				LOG.error(fileName + "closed properties fail！");
 			}
 		}
 	}
@@ -54,14 +54,12 @@ public class PropertiesHelp {
 		if (propertiesHelps == null)
 			propertiesHelps = new PropertiesHelp();
 		try {
-			// props.getProperty(name);
 			if (LOG.isDebugEnabled()) {
-				LOG.debug("没有转换前的配置信息：" + (String) map.get(key));
+				LOG.debug("properties value：" + (String) map.get(key));
 			}
 			return (String) map.get(key);
-			// return new String(((String) map.get(key)).getBytes(), "UTF-8");
 		} catch (Exception e) {
-			LOG.error("读取" + key + "属性异常" + e);
+			LOG.error("read [" + key + "] fail" + e);
 			return null;
 		}
 	}
