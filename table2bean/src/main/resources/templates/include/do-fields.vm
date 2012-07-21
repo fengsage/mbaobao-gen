@@ -1,0 +1,33 @@
+	//========== properties ==========
+#foreach($field in $java.fields) 
+
+	/**
+	* This property corresponds to db column <tt>${field.columnName}</tt>.
+	*/
+	private $field.typeName $field.name;
+
+#end
+
+    //========== getters and setters ==========
+#foreach($field in $java.fields) 
+
+	/**
+	* Getter method for property <tt>$field.name</tt>.
+	*
+	* @return property value of $field.name
+	*/
+	public $field.typeName ${field.getMethodName}() {
+		return $field.name;
+	}
+	
+	/**
+	* Setter method for property <tt>$field.name</tt>.
+	* 
+	* @param $column.variableName value to be assigned to property $field.name
+	*/
+	public void ${field.setMethodName}($field.typeName $field.name) {
+		this.$field.name = $field.name;
+	}
+	
+#end
+
