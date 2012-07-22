@@ -4,6 +4,8 @@
  */
 package com.mbaobao.gen;
 
+import java.sql.SQLException;
+
 /**
  *                       
  * @Filename GenMain.java
@@ -25,7 +27,8 @@ package com.mbaobao.gen;
  */
 public class GenMain {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
+		GenFactory.export();
 	}
 	
 }

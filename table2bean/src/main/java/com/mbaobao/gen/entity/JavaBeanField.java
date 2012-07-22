@@ -25,6 +25,7 @@ import java.io.Serializable;
  *<li>Content: create</li>
  *
  */
+@SuppressWarnings("rawtypes")
 public class JavaBeanField implements Serializable {
 	
 	/** Comment for <code>serialVersionUID</code> */
@@ -34,7 +35,7 @@ public class JavaBeanField implements Serializable {
 	
 	private String				columnName;
 	
-	private String				typeName;
+	private Class				clsName;
 	
 	private String				setMethodName;
 	
@@ -53,21 +54,6 @@ public class JavaBeanField implements Serializable {
 	 */
 	public void setName(String name) {
 		this.name = name;
-	}
-	
-	/**
-	 * @return Returns the typeName
-	 */
-	public String getTypeName() {
-		return typeName;
-	}
-	
-	/**
-	 * @param typeName
-	 * The typeName to set.
-	 */
-	public void setTypeName(String typeName) {
-		this.typeName = typeName;
 	}
 	
 	/**
@@ -116,14 +102,29 @@ public class JavaBeanField implements Serializable {
 	}
 	
 	/**
+	 * @return Returns the clsName
+	 */
+	public Class getClsName() {
+		return clsName;
+	}
+	
+	/**
+	 * @param clsName
+	 * The clsName to set.
+	 */
+	public void setClsName(Class clsName) {
+		this.clsName = clsName;
+	}
+	
+	/**
 	 * @return
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "JavaBeanField [name=" + name + ", columnName=" + columnName + ", typeName="
-				+ typeName + ", setMethodName=" + setMethodName + ", getMethodName="
-				+ getMethodName + "]";
+		return "JavaBeanField [name=" + name + ", columnName=" + columnName + ", clsName="
+				+ clsName + ", setMethodName=" + setMethodName + ", getMethodName=" + getMethodName
+				+ "]";
 	}
 	
 }

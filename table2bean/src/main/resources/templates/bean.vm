@@ -1,5 +1,5 @@
 #parse("include/copyright.vm")
-package ${env.package}.entity;
+package ${env.entityPackage};
 
 import java.io.Serializable;
 
@@ -7,8 +7,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
 // auto generated imports
-#foreach($importClass in $table.doImports) 
-import $importClass;
+#foreach($field in $java.fields) 
+import $field.clsName.getName();
 #end
 
 /**
@@ -18,7 +18,7 @@ import $importClass;
 public class ${java.className} implements Serializable{
 
 	/** Comment for <code>serialVersionUID</code> */
-	private static final long serialVersionUID = -4282603875229233564L;
+	private static final long serialVersionUID = -1L;
 
 #parse("include/do-fields.vm")
 

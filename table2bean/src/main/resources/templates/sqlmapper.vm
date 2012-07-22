@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${env.daoPackage}.${java.className}Dao">
+
+	<resultMap id="BASE-RESULT" type="${env.entityPackage}.${java.className}">
+#foreach($field in $java.fields) 
+		<result property="${field.name}" column="${field.columnName}" />
+#end
+	</resultMap>
+	
+	<select id="get${java.className}Count" parameterType="map" resultType="int">
+		SELECT 
+			count(*)
+		FROM 
+			${table.name}
+		<where>
+#foreach($field in $java.fields) 
+  			<if test="param.${field.name}!=null">
+  				#if(${foreach.index}!=0)AND#end ${field.columnName} = #{param.${field.name}}
+  			</if>
+#end
+		</where>
+	</select>
+	
+	<select id="find${java.className}sByPage" parameterType="map" resultMap="BASE-RESULT">
+		SELECT 
+			* 
+		FROM 
+			${table.name}
+		<where>
+#foreach($field in $java.fields) 
+  			<if test="param.${field.name}!=null">
+  				#if(${foreach.index}!=0)AND#end ${field.columnName} = #{param.${field.name}}
+  			</if>
+#end
+		</where>
+		LIMIT 
+			#{offset},#{rows}
+	</select>
+	ac_application
+  	<insert id="insert" parameterType="${env.entityPackage}.${java.className}">
+  		INSERT INTO ${table.name} ( 
+			#foreach($field in $java.fields)#if(${foreach.index}!=0),#end${field.columnName}#end 
+			
+  		) VALUES (
+			#foreach($field in $java.fields)#if(${foreach.index}!=0),#end#{${field.name}}#end 
+			
+  		)   
+    	<selectKey resultType="Integer" keyProperty="id">    
+      		SELECT LAST_INSERT_ID()     
+		</selectKey>
+  	</insert>
+  	 
+  	<update id="update" parameterType="${env.entityPackage}.${java.className}">
+  		UPDATE
+  			${table.name}
+		<set>
+#foreach($field in $java.fields) 
+  			<if test="${field.name}!=null">
+  				#if(${foreach.index}!=0),#end ${field.columnName} = #{${field.name}}
+  			</if>
+#end
+		</set>
+  		WHERE
+  			id = #{id}
+  	</update>
+  	
+  	<delete id="deleteByPrimary">
+  		DELETE FROM ${table.name} WHERE id = #{id}
+  	</delete>
+  	 
+</mapper>

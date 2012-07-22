@@ -52,12 +52,7 @@ public class PropertiesHelp {
 		if (propertiesHelps == null)
 			propertiesHelps = new PropertiesHelp();
 		try {
-			// props.getProperty(name);
-			if (LOG.isDebugEnabled()) {
-				LOG.debug("没有转换前的配置信息：" + (String) map.get(key));
-			}
 			return (String) map.get(key);
-			// return new String(((String) map.get(key)).getBytes(), "UTF-8");
 		} catch (Exception e) {
 			LOG.error("读取" + key + "属性异常" + e);
 			return null;

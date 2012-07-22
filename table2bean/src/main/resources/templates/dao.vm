@@ -1,0 +1,25 @@
+#parse("include/copyright.vm")
+package ${env.daoPackage};
+
+import java.util.List;
+import java.lang.Integer;
+import ${env.entityPackage}.${java.className};
+
+/**
+ *
+#parse("include/description-java.vm")
+ */
+
+public interface ${java.className}Dao {
+
+	public Integer insert(${java.className} $factory.firstLetterLower(${java.className}));
+	
+	public Integer update(${java.className} $factory.firstLetterLower(${java.className}));
+	
+	public Integer get${java.className}Count(${java.className} param);
+	
+	public List<${java.className}> find${java.className}sByPage(${java.className} param,Integer offset,Integer rows);
+	
+	public Integer deleteByPrimary(Integer id);
+	
+}

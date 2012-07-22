@@ -4,6 +4,8 @@
  */
 package com.mbaobao.gen;
 
+import java.util.Date;
+
 import com.mbaobao.gen.entity.JavaBean;
 import com.mbaobao.gen.entity.JavaBeanField;
 import com.mbaobao.gen.entity.Table;
@@ -37,7 +39,7 @@ public class JavaBeanFactory {
 			JavaBeanField field = new JavaBeanField();
 			field.setName(buildFieldName(column.getName()));
 			field.setColumnName(column.getName());
-			field.setTypeName(buildTypeName(column.getColumnType()));
+			field.setClsName(buildClsName(column.getColumnType()));
 			field.setGetMethodName(buildGetMethod(field.getName()));
 			field.setSetMethodName(buildSetMethod(field.getName()));
 			bean.getFields().add(field);
@@ -53,32 +55,33 @@ public class JavaBeanFactory {
 		return "get" + firstLetterUpper(name);
 	}
 	
-	private static String buildTypeName(TableColumnEnum columnType) {
+	@SuppressWarnings("rawtypes")
+	private static Class buildClsName(TableColumnEnum columnType) {
 		switch (columnType) {
 			case DATE:
-				return "Date";
+				return Date.class;
 			case DOUBLE:
-				return "Double";
+				return Double.class;
 			case DATETIME:
-				return "Date";
+				return Date.class;
 			case FLOAT:
-				return "Float";
+				return Float.class;
 			case INT:
-				return "Integer";
+				return Integer.class;
 			case INT_UNSIGNED:
-				return "Integer";
+				return Integer.class;
 			case INTEGER:
-				return "Integer";
+				return Integer.class;
 			case TEXT:
-				return "String";
+				return String.class;
 			case TIMESTAMP:
-				return "Long";
+				return Date.class;
 			case TINYINT:
-				return "Integer";
+				return Integer.class;
 			case VARCHAR:
-				return "String";
+				return String.class;
 		}
-		return "String";//无奈的选择
+		return String.class;
 	}
 	
 	private static String buildFieldName(String name) {
@@ -94,12 +97,20 @@ public class JavaBeanFactory {
 		return name;
 	}
 	
-	private static String firstLetterUpper(String string) {
+	public static String firstLetterUpper(String string) {
 		if (string.length() < 1) {
 			return string;
 		}
 		string = string.toLowerCase();
 		return string.substring(0, 1).toUpperCase() + string.substring(1, string.length());
+	}
+	
+	public static String firstLetterLower(String string) {
+		if (string.length() < 1) {
+			return string;
+		}
+		string = string.toLowerCase();
+		return string.substring(0, 1).toLowerCase() + string.substring(1, string.length());
 	}
 	
 	public static void main(String[] args) {

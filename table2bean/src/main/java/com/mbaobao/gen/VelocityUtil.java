@@ -46,14 +46,12 @@ public class VelocityUtil {
 		ve = new VelocityEngine();
 		ve.setProperty("resource.loader", "file");
 		ve.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, TEMPATE_DIR);
-		
 		ve.setProperty(Velocity.INPUT_ENCODING, "UTF-8");
 		ve.setProperty(Velocity.OUTPUT_ENCODING, "UTF-8");
 		ve.init();
 	}
 	
 	public static String loadVelocity(String vmPath, Map<String, Object> data) {
-		logger.info("读取创建VM模版," + data);
 		Template tempate = ve.getTemplate(vmPath);
 		StringWriter writer = new StringWriter();
 		tempate.merge(buildContext(data), writer);

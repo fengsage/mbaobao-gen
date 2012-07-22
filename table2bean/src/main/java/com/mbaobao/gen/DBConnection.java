@@ -8,25 +8,16 @@ import java.sql.Statement;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
-import com.mbaobao.gen.util.PropertiesHelp;
-
 public class DBConnection {
 	
-	private static final String	DRIVER		= PropertiesHelp
-												.getProperty("prop.jdbc.default.driver");
-	private static final String	URL			= PropertiesHelp.getProperty("prop.jdbc.default.url");
-	private static final String	USERNAME	= PropertiesHelp
-												.getProperty("prop.jdbc.default.username");
-	private static final String	PASSWORD	= PropertiesHelp
-												.getProperty("prop.jdbc.default.password");
-	private DataSource			dataSource;
+	private DataSource	dataSource;
 	
 	public DBConnection() {
 		PoolProperties p = new PoolProperties();
-		p.setUrl(URL);
-		p.setDriverClassName(DRIVER);
-		p.setUsername(USERNAME);
-		p.setPassword(PASSWORD);
+		p.setDriverClassName(Configuration.loadConfiguration().jdbcDriver);
+		p.setUrl(Configuration.loadConfiguration().jdbcUrl);
+		p.setUsername(Configuration.loadConfiguration().jdbcUsername);
+		p.setPassword(Configuration.loadConfiguration().jdbcPassword);
 		p.setJmxEnabled(true);
 		p.setTestWhileIdle(false);
 		p.setTestOnBorrow(true);
