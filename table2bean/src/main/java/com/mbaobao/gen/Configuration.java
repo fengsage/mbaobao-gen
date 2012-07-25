@@ -57,7 +57,11 @@ public class Configuration {
 	/**mapping配置*/
 	public List<TableMapping>		mappings;
 	
-	private Configuration() {
+	enum ConfigurationEnum {
+		PROPERTIES, MAVEN;
+	}
+	
+	private Configuration(ConfigurationEnum type) {
 		initEnv();
 		initJDBC();
 		initMappings();
@@ -65,7 +69,14 @@ public class Configuration {
 	
 	public static Configuration loadConfiguration() {
 		if (_configuration == null) {
-			_configuration = new Configuration();
+			_configuration = new Configuration(ConfigurationEnum.PROPERTIES);
+		}
+		return _configuration;
+	}
+	
+	public static Configuration loadMavenConfiguration() {
+		if (_configuration == null) {
+			_configuration = new Configuration(ConfigurationEnum.MAVEN);
 		}
 		return _configuration;
 	}

@@ -28,7 +28,6 @@ import java.sql.SQLException;
 public class GenMain {
 	
 	public static void main(String[] args) throws SQLException {
-		GenFactory.export();
+		new GenFactory(Configuration.loadConfiguration()).export();
 	}
-	
 }

@@ -12,12 +12,12 @@ public class DBConnection {
 	
 	private DataSource	dataSource;
 	
-	public DBConnection() {
+	public DBConnection(Configuration configuration) {
 		PoolProperties p = new PoolProperties();
-		p.setDriverClassName(Configuration.loadConfiguration().jdbcDriver);
-		p.setUrl(Configuration.loadConfiguration().jdbcUrl);
-		p.setUsername(Configuration.loadConfiguration().jdbcUsername);
-		p.setPassword(Configuration.loadConfiguration().jdbcPassword);
+		p.setDriverClassName(configuration.jdbcDriver);
+		p.setUrl(configuration.jdbcUrl);
+		p.setUsername(configuration.jdbcUsername);
+		p.setPassword(configuration.jdbcPassword);
 		p.setJmxEnabled(true);
 		p.setTestWhileIdle(false);
 		p.setTestOnBorrow(true);
@@ -45,9 +45,9 @@ public class DBConnection {
 		return this.dataSource;
 	}
 	
-	public static Connection getConnection() {
+	public static Connection getConnection(Configuration configuration) {
 		try {
-			Connection con = new DBConnection().getDataSource().getConnection();
+			Connection con = new DBConnection(configuration).getDataSource().getConnection();
 			return con;
 		} catch (SQLException e) {
 		}

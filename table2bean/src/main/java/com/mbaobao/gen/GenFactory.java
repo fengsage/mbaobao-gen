@@ -43,10 +43,16 @@ public class GenFactory {
 	
 	private static final Logger	logger	= Logger.getLogger(GenFactory.class);
 	
-	public static void export() throws SQLException {
-		List<TableMapping> mappings = Configuration.loadConfiguration().mappings;
+	private Configuration		configuration;
+	
+	public GenFactory(Configuration configuration) {
+		this.configuration = configuration;
+	}
+	
+	public void export() throws SQLException {
+		List<TableMapping> mappings = configuration.mappings;
 		for (TableMapping mapping : mappings) {
-			Table table = TableModel.getTableInfo(mapping.getTableName());
+			Table table = new TableModel(configuration).getTableInfo(mapping.getTableName());
 			//生成Encrypt
 			exportJavaBean(mapping.getJavaName(), table);
 			//生成Dao
@@ -56,28 +62,28 @@ public class GenFactory {
 		}
 	}
 	
-	private static void exportJavaBean(String name, Table table) {
+	private void exportJavaBean(String name, Table table) {
 		String source = VelocityUtil.loadVelocity("bean.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.ENTITY),
 			buildExportFileName(name, GenFileEnum.ENTITY), source);
 	}
 	
-	private static void exportJavaDao(String name, Table table) {
+	private void exportJavaDao(String name, Table table) {
 		String source = VelocityUtil.loadVelocity("dao.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.DAO),
 			buildExportFileName(name, GenFileEnum.DAO), source);
 	}
 	
-	private static void exportSqlMapper(String name, Table table) {
+	private void exportSqlMapper(String name, Table table) {
 		String source = VelocityUtil.loadVelocity("sqlmapper.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.MAPPER),
 			buildExportFileName(name, GenFileEnum.MAPPER), source);
 	}
 	
-	private static Map<String, Object> buildVelocityData(String javaName, Table table) {
+	private Map<String, Object> buildVelocityData(String javaName, Table table) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("java", JavaBeanFactory.convert(table, javaName));
 		map.put("table", table);
@@ -86,19 +92,19 @@ public class GenFactory {
 		return map;
 	}
 	
-	private static String buildExportFilePath(GenFileEnum type) {
+	private String buildExportFilePath(GenFileEnum type) {
 		switch (type) {
 			case ENTITY:
-				return Configuration.loadConfiguration().getEntityPath();
+				return configuration.getEntityPath();
 			case DAO:
-				return Configuration.loadConfiguration().getDaoPath();
+				return configuration.getDaoPath();
 			case MAPPER:
-				return Configuration.loadConfiguration().getMaperPath();
+				return configuration.getMaperPath();
 		}
 		throw new RuntimeException("不知道神马类型？" + type);
 	}
 	
-	private static String buildExportFileName(String name, GenFileEnum type) {
+	private String buildExportFileName(String name, GenFileEnum type) {
 		switch (type) {
 			case ENTITY:
 				return name + ".java";
@@ -110,18 +116,18 @@ public class GenFactory {
 		throw new RuntimeException("不知道神马类型？" + type);
 	}
 	
-	private static void setEnvironment(Map<String, Object> data) {
+	private void setEnvironment(Map<String, Object> data) {
 		Map<String, String> env = new HashMap<String, String>();
-		env.put("package", Configuration.loadConfiguration().packageName);
-		env.put("entityPackage", Configuration.loadConfiguration().entityPackage);
-		env.put("daoPackage", Configuration.loadConfiguration().daoPackage);
-		env.put("author", Configuration.loadConfiguration().author);
+		env.put("package", configuration.packageName);
+		env.put("entityPackage", configuration.entityPackage);
+		env.put("daoPackage", configuration.daoPackage);
+		env.put("author", configuration.author);
 		env.put("time", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date()));
 		data.put("env", env);
 		data.put("factory", JavaBeanFactory.class);
 	}
 	
-	private static void exportFile(String filePath, String fileName, String source) {
+	private void exportFile(String filePath, String fileName, String source) {
 		try {
 			logger.info("导出文件:" + filePath);
 			File file = new File(filePath);
@@ -137,6 +143,6 @@ public class GenFactory {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		GenFactory.export();
+		new GenFactory(Configuration.loadConfiguration()).export();
 	}
 }

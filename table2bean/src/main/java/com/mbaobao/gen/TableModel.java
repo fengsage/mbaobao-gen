@@ -38,12 +38,18 @@ public class TableModel {
 	
 	private static final Logger	logger	= Logger.getLogger(TableModel.class);
 	
-	public static Table getTableInfo(String tableName) throws SQLException {
+	private Configuration		configuration;
+	
+	public TableModel(Configuration configuration) {
+		this.configuration = configuration;
+	}
+	
+	public Table getTableInfo(String tableName) throws SQLException {
 		logger.info("读取表信息:" + tableName);
 		
 		String sql = String.format("SELECT * FROM %s LIMIT 1", tableName);
 		
-		Statement st = DBConnection.getConnection().createStatement();
+		Statement st = DBConnection.getConnection(configuration).createStatement();
 		ResultSet rs = st.executeQuery(sql);
 		ResultSetMetaData md = rs.getMetaData();
 		
@@ -84,6 +90,7 @@ public class TableModel {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		System.out.println(TableModel.getTableInfo("ac_user"));
+		System.out.println(new TableModel(Configuration.loadConfiguration())
+			.getTableInfo("ac_user"));
 	}
 }

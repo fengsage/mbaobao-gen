@@ -3,6 +3,7 @@ package ${env.daoPackage};
 
 import java.util.List;
 import java.lang.Integer;
+import org.apache.ibatis.annotations.Param;
 import ${env.entityPackage}.${java.className};
 
 /**
@@ -18,7 +19,7 @@ public interface ${java.className}Dao {
 	
 	public Integer get${java.className}Count(${java.className} param);
 	
-	public List<${java.className}> find${java.className}sByPage(${java.className} param,Integer offset,Integer rows);
+	public List<${java.className}> find${java.className}sByPage(@Param("param")${java.className} param,@Param("offset")Integer offset,@Param("rows")Integer rows);
 	
 	public Integer deleteByPrimary(Integer id);
 	
