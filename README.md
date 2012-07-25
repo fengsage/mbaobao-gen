@@ -8,7 +8,7 @@
 
 ###1.web-archetype 一个简单的springmvc+mybatis搭建工程
 
-    mvn archetype:generate -DarchetypeGroupId=com.mbaobao.gen  -DarchetypeArtifactId=web-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.mbaobao.vip -DartifactId=demo
+    mvn archetype:generate -DarchetypeGroupId=com.mbaobao.gen  -DarchetypeArtifactId=web-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=<groupId> -DartifactId=<artifactId>
 
 ###2.table2bean 直接根据数据库(目前只支持mysql) schemal导处java bean\java dao\mybatis mapper
 
