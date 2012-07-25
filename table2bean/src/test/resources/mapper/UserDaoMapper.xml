@@ -124,7 +124,7 @@
 		LIMIT 
 			#{offset},#{rows}
 	</select>
-	ac_application
+	
   	<insert id="insert" parameterType="com.mbaoabo.test.bean.User">
   		INSERT INTO ac_user ( 
 			id,username,flower_name,password,phone,role_ids,app_ids,is_lock,is_del,add_user,last_login_ip,last_login_time,create_time,update_time			

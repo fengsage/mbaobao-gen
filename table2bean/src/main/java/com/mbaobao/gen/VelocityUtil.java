@@ -37,12 +37,13 @@ public class VelocityUtil {
 	
 	private static final Logger		logger		= Logger.getLogger(VelocityUtil.class);
 	
-	private static final String		TEMPATE_DIR	= GenFactory.class.getResource("/").getPath()
+	private static final String		TEMPATE_DIR	= VelocityUtil.class.getResource("/").getPath()
 													+ "templates";
 	
 	private static VelocityEngine	ve;
 	
 	static {
+		logger.info("templates目录:" + TEMPATE_DIR);
 		ve = new VelocityEngine();
 		ve.setProperty("resource.loader", "file");
 		ve.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, TEMPATE_DIR);

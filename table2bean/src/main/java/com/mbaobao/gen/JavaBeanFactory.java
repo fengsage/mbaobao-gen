@@ -101,7 +101,6 @@ public class JavaBeanFactory {
 		if (string.length() < 1) {
 			return string;
 		}
-		string = string.toLowerCase();
 		return string.substring(0, 1).toUpperCase() + string.substring(1, string.length());
 	}
 	
@@ -109,7 +108,6 @@ public class JavaBeanFactory {
 		if (string.length() < 1) {
 			return string;
 		}
-		string = string.toLowerCase();
 		return string.substring(0, 1).toLowerCase() + string.substring(1, string.length());
 	}
 	

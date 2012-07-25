@@ -39,7 +39,7 @@
 		LIMIT 
 			#{offset},#{rows}
 	</select>
-	ac_application
+	
   	<insert id="insert" parameterType="${env.entityPackage}.${java.className}">
   		INSERT INTO ${table.name} ( 
 			#foreach($field in $java.fields)#if(${foreach.index}!=0),#end${field.columnName}#end 
