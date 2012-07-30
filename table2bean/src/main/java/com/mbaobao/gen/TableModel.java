@@ -90,7 +90,6 @@ public class TableModel {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		System.out.println(new TableModel(new PropertiesConfiguration().loadConfiguration())
-			.getTableInfo("ac_user"));
+		System.out.println(new TableModel(new PropertiesConfiguration()).getTableInfo("ac_user"));
 	}
 }

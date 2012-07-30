@@ -48,12 +48,6 @@ public abstract class Configuration {
 	/**mapping配置*/
 	public List<TableMapping>	mappings;
 	
-	/**
-	 * 读取配置文件
-	 * @return
-	 */
-	public abstract Configuration loadConfiguration();
-	
 	public String getEntityPath() {
 		return this.javaPath + File.separator + this.entityPackage.replace(".", File.separator);
 	}

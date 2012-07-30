@@ -42,15 +42,6 @@ public class PropertiesConfiguration extends Configuration {
 		initMappings();
 	}
 	
-	/**
-	 * 
-	 * @see com.mbaobao.gen.Configuration#loadConfiguration()
-	 */
-	@Override
-	public Configuration loadConfiguration() {
-		return new PropertiesConfiguration();
-	}
-	
 	private void initEnv() {
 		this.javaPath = PropertiesHelp.getProperty("gen.java.path");
 		this.resourcePath = PropertiesHelp.getProperty("gen.resources.path");
