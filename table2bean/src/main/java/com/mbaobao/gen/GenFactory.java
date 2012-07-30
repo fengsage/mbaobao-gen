@@ -143,6 +143,6 @@ public class GenFactory {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		new GenFactory(Configuration.loadConfiguration()).export();
+		new GenFactory(new PropertiesConfiguration().loadConfiguration()).export();
 	}
 }
