@@ -4,6 +4,7 @@
  */
 package com.mbaobao.plugins.entity;
 
+
 /**
  *                       
  * @Filename ResourceConfig.java
@@ -25,13 +26,19 @@ package com.mbaobao.plugins.entity;
  */
 public class ResourceConfig {
 	
-	public String	javaPath;
-	public String	resourcePath;
-	public String	packageName;
-	public String	entityPackage;
-	public String	daoPackage;
-	public String	mapperPackage;
-	public String	author;
+	private String	javaPath;
+	
+	private String	resourcePath;
+	
+	private String	packageName;
+	
+	private String	entityPackage;
+	
+	private String	daoPackage;
+	
+	private String	mapperPackage;
+	
+	private String	author;
 	
 	/**
 	 * @return Returns the javaPath

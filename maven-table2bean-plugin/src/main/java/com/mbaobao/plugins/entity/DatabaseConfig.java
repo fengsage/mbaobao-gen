@@ -25,13 +25,13 @@ package com.mbaobao.plugins.entity;
  */
 public class DatabaseConfig {
 	
-	public String	jdbcDriver;
+	private String	jdbcDriver;
 	
-	public String	jdbcUrl;
+	private String	jdbcUrl;
 	
-	public String	jdbcUsername;
+	private String	jdbcUsername;
 	
-	public String	jdbcPassword;
+	private String	jdbcPassword;
 	
 	/**
 	 * @return Returns the jdbcDriver

@@ -48,6 +48,12 @@
 						<mapperPackage></mapperPackage>
 						<author></author>
 					</resource>
+					<mappings>
+						<TableMapping>
+							<tableName>ac_user</tableName>
+							<javaName>User</javaName>
+						</TableMapping>
+					</mappings>
 				</configuration>
 			</plugin>
 		</plugins>
