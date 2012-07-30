@@ -34,5 +34,6 @@
     #表和对象映射关系，多表用,分割。 [表名]:[对象名]
     gen.mapping=ac_user:User
 
+###3.maven-tabl2bean-plugins 对table2bean的封装
 
 
