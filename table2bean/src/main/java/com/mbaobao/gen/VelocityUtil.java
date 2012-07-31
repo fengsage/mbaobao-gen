@@ -17,7 +17,7 @@ import org.apache.velocity.app.VelocityEngine;
 /**
  *                       
  * @Filename VelocityUtil.java
- *template
+ * 
  * @Description 
  *
  * @Version 1.0
@@ -35,24 +35,31 @@ import org.apache.velocity.app.VelocityEngine;
  */
 public class VelocityUtil {
 	
-	private static final Logger		logger		= Logger.getLogger(VelocityUtil.class);
+	private static final Logger	logger		= Logger.getLogger(VelocityUtil.class);
 	
-	private static final String		TEMPATE_DIR	= VelocityUtil.class.getResource("/").getPath()
-													+ "templates";
+	private static final String	TEMPATE_DIR	= VelocityUtil.class.getResource("/").getPath()
+												+ "templates";
 	
-	private static VelocityEngine	ve;
+	private VelocityEngine		ve;
 	
-	static {
+	public VelocityUtil() {
+		new VelocityUtil(null);
+	}
+	
+	public VelocityUtil(String templatePath) {
 		logger.info("templates目录:" + TEMPATE_DIR);
+		if (templatePath == null) {
+			templatePath = TEMPATE_DIR;
+		}
 		ve = new VelocityEngine();
 		ve.setProperty("resource.loader", "file");
-		ve.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, TEMPATE_DIR);
+		ve.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, templatePath);
 		ve.setProperty(Velocity.INPUT_ENCODING, "UTF-8");
 		ve.setProperty(Velocity.OUTPUT_ENCODING, "UTF-8");
 		ve.init();
 	}
 	
-	public static String loadVelocity(String vmPath, Map<String, Object> data) {
+	public String loadVelocity(String vmPath, Map<String, Object> data) {
 		Template tempate = ve.getTemplate(vmPath);
 		StringWriter writer = new StringWriter();
 		tempate.merge(buildContext(data), writer);
@@ -60,7 +67,7 @@ public class VelocityUtil {
 		return writer.toString();
 	}
 	
-	private static VelocityContext buildContext(Map<String, Object> data) {
+	private VelocityContext buildContext(Map<String, Object> data) {
 		VelocityContext context = new VelocityContext();
 		for (String key : data.keySet()) {
 			context.put(key, data.get(key));
@@ -70,6 +77,6 @@ public class VelocityUtil {
 	
 	public static void main(String[] args) {
 		Map<String, Object> data = new HashMap<String, Object>();
-		String resource = VelocityUtil.loadVelocity("bean.vm", data);
+		String resource = new VelocityUtil().loadVelocity("bean.vm", data);
 	}
 }

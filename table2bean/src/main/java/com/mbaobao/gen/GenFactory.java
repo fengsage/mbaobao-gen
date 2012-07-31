@@ -45,8 +45,11 @@ public class GenFactory {
 	
 	private Configuration		configuration;
 	
+	private VelocityUtil		ve;
+	
 	public GenFactory(Configuration configuration) {
 		this.configuration = configuration;
+		ve = new VelocityUtil(configuration.templatePath);
 	}
 	
 	public void export() throws SQLException {
@@ -63,21 +66,21 @@ public class GenFactory {
 	}
 	
 	private void exportJavaBean(String name, Table table) {
-		String source = VelocityUtil.loadVelocity("bean.vm", buildVelocityData(name, table));
+		String source = ve.loadVelocity("bean.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.ENTITY),
 			buildExportFileName(name, GenFileEnum.ENTITY), source);
 	}
 	
 	private void exportJavaDao(String name, Table table) {
-		String source = VelocityUtil.loadVelocity("dao.vm", buildVelocityData(name, table));
+		String source = ve.loadVelocity("dao.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.DAO),
 			buildExportFileName(name, GenFileEnum.DAO), source);
 	}
 	
 	private void exportSqlMapper(String name, Table table) {
-		String source = VelocityUtil.loadVelocity("sqlmapper.vm", buildVelocityData(name, table));
+		String source = ve.loadVelocity("sqlmapper.vm", buildVelocityData(name, table));
 		//导出文件
 		exportFile(buildExportFilePath(GenFileEnum.MAPPER),
 			buildExportFileName(name, GenFileEnum.MAPPER), source);

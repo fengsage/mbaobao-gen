@@ -70,6 +70,7 @@ public class TableModel {
 		
 		checkTable(table);
 		
+		logger.info("读取表信息:" + tableName + "\t完成");
 		return table;
 	}
 	

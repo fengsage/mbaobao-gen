@@ -30,6 +30,9 @@ import com.mbaobao.gen.entity.TableMapping;
  */
 public abstract class Configuration {
 	
+	/**模版路径*/
+	public String				templatePath;
+	
 	/**环境相关*/
 	public String				javaPath;
 	public String				resourcePath;
