@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mbaoabo.test.dao.UserDao">
+
+	<resultMap id="BASE-RESULT" type="com.mbaoabo.test.bean.User">
+		<result property="id" column="id" />
+		<result property="username" column="username" />
+		<result property="flowerName" column="flower_name" />
+		<result property="password" column="password" />
+		<result property="phone" column="phone" />
+		<result property="roleIds" column="role_ids" />
+		<result property="appIds" column="app_ids" />
+		<result property="isLock" column="is_lock" />
+		<result property="isDel" column="is_del" />
+		<result property="addUser" column="add_user" />
+		<result property="lastLoginIp" column="last_login_ip" />
+		<result property="lastLoginTime" column="last_login_time" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+	
+	<select id="getUserCount" parameterType="map" resultType="int">
+		SELECT 
+			count(*)
+		FROM 
+			ac_user
+		<where>
+  			<if test="param.id!=null">
+  				 id = #{param.id}
+  			</if>
+  			<if test="param.username!=null">
+  				AND username = #{param.username}
+  			</if>
+  			<if test="param.flowerName!=null">
+  				AND flower_name = #{param.flowerName}
+  			</if>
+  			<if test="param.password!=null">
+  				AND password = #{param.password}
+  			</if>
+  			<if test="param.phone!=null">
+  				AND phone = #{param.phone}
+  			</if>
+  			<if test="param.roleIds!=null">
+  				AND role_ids = #{param.roleIds}
+  			</if>
+  			<if test="param.appIds!=null">
+  				AND app_ids = #{param.appIds}
+  			</if>
+  			<if test="param.isLock!=null">
+  				AND is_lock = #{param.isLock}
+  			</if>
+  			<if test="param.isDel!=null">
+  				AND is_del = #{param.isDel}
+  			</if>
+  			<if test="param.addUser!=null">
+  				AND add_user = #{param.addUser}
+  			</if>
+  			<if test="param.lastLoginIp!=null">
+  				AND last_login_ip = #{param.lastLoginIp}
+  			</if>
+  			<if test="param.lastLoginTime!=null">
+  				AND last_login_time = #{param.lastLoginTime}
+  			</if>
+  			<if test="param.createTime!=null">
+  				AND create_time = #{param.createTime}
+  			</if>
+  			<if test="param.updateTime!=null">
+  				AND update_time = #{param.updateTime}
+  			</if>
+		</where>
+	</select>
+	
+	<select id="findUsersByPage" parameterType="map" resultMap="BASE-RESULT">
+		SELECT 
+			* 
+		FROM 
+			ac_user
+		<where>
+  			<if test="param.id!=null">
+  				 id = #{param.id}
+  			</if>
+  			<if test="param.username!=null">
+  				AND username = #{param.username}
+  			</if>
+  			<if test="param.flowerName!=null">
+  				AND flower_name = #{param.flowerName}
+  			</if>
+  			<if test="param.password!=null">
+  				AND password = #{param.password}
+  			</if>
+  			<if test="param.phone!=null">
+  				AND phone = #{param.phone}
+  			</if>
+  			<if test="param.roleIds!=null">
+  				AND role_ids = #{param.roleIds}
+  			</if>
+  			<if test="param.appIds!=null">
+  				AND app_ids = #{param.appIds}
+  			</if>
+  			<if test="param.isLock!=null">
+  				AND is_lock = #{param.isLock}
+  			</if>
+  			<if test="param.isDel!=null">
+  				AND is_del = #{param.isDel}
+  			</if>
+  			<if test="param.addUser!=null">
+  				AND add_user = #{param.addUser}
+  			</if>
+  			<if test="param.lastLoginIp!=null">
+  				AND last_login_ip = #{param.lastLoginIp}
+  			</if>
+  			<if test="param.lastLoginTime!=null">
+  				AND last_login_time = #{param.lastLoginTime}
+  			</if>
+  			<if test="param.createTime!=null">
+  				AND create_time = #{param.createTime}
+  			</if>
+  			<if test="param.updateTime!=null">
+  				AND update_time = #{param.updateTime}
+  			</if>
+		</where>
+		LIMIT 
+			#{offset},#{rows}
+	</select>
+	
+  	<insert id="insert" parameterType="com.mbaoabo.test.bean.User">
+  		INSERT INTO ac_user ( 
+			id,username,flower_name,password,phone,role_ids,app_ids,is_lock,is_del,add_user,last_login_ip,last_login_time,create_time,update_time			
+  		) VALUES (
+			#{id},#{username},#{flowerName},#{password},#{phone},#{roleIds},#{appIds},#{isLock},#{isDel},#{addUser},#{lastLoginIp},#{lastLoginTime},#{createTime},#{updateTime}			
+  		)   
+    	<selectKey resultType="Integer" keyProperty="id">    
+      		SELECT LAST_INSERT_ID()     
+		</selectKey>
+  	</insert>
+  	 
+  	 
+</mapper>
