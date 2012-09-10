@@ -17,22 +17,20 @@
 
 配置文件:config.properties
 
-    #数据库配置-必填
-    prop.jdbc.default.driver=com.mysql.jdbc.Driver
-    prop.jdbc.default.url=jdbc:mysql://127.0.0.1/test
-    prop.jdbc.default.username=root
-    prop.jdbc.default.password=
-
-    #环境配置-默认以classpath生成
+    gen.jdbc.default.driver=com.mysql.jdbc.Driver
+    gen.jdbc.default.url=jdbc:mysql://127.0.0.1/test
+    gen.jdbc.default.username=root
+    gen.jdbc.default.password=
+    
     gen.java.path=/home/fred/dev/development/java/gen_mbaobao/table2bean/src/test/java
-    gen.java.package=com.mbaoabo.test
-    gen.package.entity=com.mbaoabo.test.bean
-    gen.package.dao=com.mbaoabo.test.dao
-    gen.package.mapper=mapper
-    gen.resources.path=/home/fred/dev/development/java/gen_mbaobao/table2bean/src/test/resources
-    gen.author=kuci@mbaobao.com
-    #表和对象映射关系，多表用,分割。 [表名]:[对象名]
+    gen.java.path.bean=com.mbaoabo.test.bean
+    gen.java.path.dao=com.mbaoabo.test.dao
+    
+    gen.resource.path=/home/fred/dev/development/java/gen_mbaobao/table2bean/src/test/resources
+    gen.resource.path.mapper=mapper
+    
     gen.mapping=ac_user:User
+
 
 ###3.maven-tabl2bean-plugins 对table2bean的封装
 
