@@ -36,6 +36,8 @@ public class JavaBean implements Serializable {
 	
 	private List<JavaBeanField>	fields				= new ArrayList<JavaBeanField>();
 	
+	private Table				table;
+	
 	/**
 	 * 构建一个<code>JavaBean.java</code>
 	 * @param className
@@ -82,9 +84,25 @@ public class JavaBean implements Serializable {
 		this.fields = fields;
 	}
 	
+	/**
+	 * @return Returns the table
+	 */
+	public Table getTable() {
+		return table;
+	}
+	
+	/**
+	 * @param table
+	 * The table to set.
+	 */
+	public void setTable(Table table) {
+		this.table = table;
+	}
+	
 	@Override
 	public String toString() {
-		return String.format("JavaBean [className=%s, fields=%s]", className, fields);
+		return String.format("JavaBean [className=%s, fields=%s, table=%s]", className, fields,
+			table);
 	}
 	
 }

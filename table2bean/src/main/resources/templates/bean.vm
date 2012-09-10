@@ -2,7 +2,6 @@
  * mbaobao.com Inc.
  * Copyright (c) 2012 All Rights Reserved.
  */
-
 package ${env.entityPackage};
 
 import java.io.Serializable;
@@ -11,7 +10,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
 #foreach($field in $imprts) 
-	import $field;
+import $field;
 #end
 
 /**

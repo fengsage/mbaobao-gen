@@ -71,6 +71,7 @@ public class JavaBeanFactory {
 	
 	private JavaBean buildJavaBean(final Table table) {
 		JavaBean bean = new JavaBean();
+		bean.setTable(table);
 		for (TableColumn column : table.getColumns()) {
 			bean.getFields().add(buildJavaBeanFiled(column));
 		}

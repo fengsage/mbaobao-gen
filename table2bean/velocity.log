@@ -1,683 +1,630 @@
-2012-09-10 20:37:59,871 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 20:37:59,871 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 20:37:59,871 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 20:37:59,871 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 20:37:59,875 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 20:37:59,889 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 20:37:59,891 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 20:37:59,894 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 20:37:59,895 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 20:37:59,896 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 20:37:59,898 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 20:37:59,900 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 20:37:59,903 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 20:37:59,906 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 20:37:59,908 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 20:37:59,959 - Created '20' parsers.
-2012-09-10 20:37:59,974 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 20:37:59,975 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 20:37:59,975 - Velocimacro : Default library not found.
-2012-09-10 20:37:59,975 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 20:37:59,975 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 20:37:59,975 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 20:37:59,975 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 20:38:00,007 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 20:38:00,026 - Null reference [template 'templates/bean.vm', line 25, column 14] : ${java.className} cannot be resolved.
-2012-09-10 21:20:14,001 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:20:14,001 - Initializing Velocity, Calling init()...
-2012-09-10 21:20:14,001 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:20:14,001 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:20:14,001 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:20:14,001 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:20:14,001 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:20:14,001 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:20:14,004 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:20:14,018 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:20:14,021 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:20:14,023 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:20:14,024 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:20:14,026 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:20:14,027 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:20:14,030 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:20:14,032 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:20:14,035 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:20:14,037 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:20:14,088 - Created '20' parsers.
-2012-09-10 21:20:14,100 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:20:14,102 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:20:14,103 - Velocimacro : Default library not found.
-2012-09-10 21:20:14,103 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:20:14,103 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:20:14,103 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:20:14,103 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:20:14,139 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:21:36,000 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:21:36,001 - Initializing Velocity, Calling init()...
-2012-09-10 21:21:36,001 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:21:36,001 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:21:36,001 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:21:36,001 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:21:36,001 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:21:36,001 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:21:36,005 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:21:36,018 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:21:36,020 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:21:36,022 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:21:36,024 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:21:36,026 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:21:36,027 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:21:36,030 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:21:36,033 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:21:36,036 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:21:36,038 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:21:36,090 - Created '20' parsers.
-2012-09-10 21:21:36,106 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:21:36,107 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:21:36,107 - Velocimacro : Default library not found.
-2012-09-10 21:21:36,107 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:21:36,108 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:21:36,108 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:21:36,108 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:21:36,150 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:21:36,172 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,172 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,175 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,176 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,176 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,176 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,176 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,176 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,177 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,177 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,177 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,177 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,177 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,178 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,179 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,179 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:21:36,179 - Null reference [template 'templates/bean.vm', line 39, column 47] : ${field.getMethodName} cannot be resolved.
-2012-09-10 21:21:36,179 - Null reference [template 'templates/bean.vm', line 43, column 21] : ${field.setMethodName} cannot be resolved.
-2012-09-10 21:30:19,494 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:30:19,494 - Initializing Velocity, Calling init()...
-2012-09-10 21:30:19,494 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:30:19,494 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:30:19,494 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:30:19,494 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:30:19,494 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:30:19,494 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:30:19,498 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:30:19,513 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:30:19,517 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:30:19,520 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:30:19,522 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:30:19,524 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:30:19,525 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:30:19,528 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:30:19,530 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:30:19,534 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:30:19,536 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:30:19,585 - Created '20' parsers.
-2012-09-10 21:30:19,599 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:30:19,601 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:30:19,601 - Velocimacro : Default library not found.
-2012-09-10 21:30:19,601 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:30:19,601 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:30:19,601 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:30:19,601 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:30:19,654 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,671 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,672 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,673 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,674 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,675 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,676 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,677 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,678 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:19,679 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:19,679 - Null reference [template 'templates/bean.vm', line 43, column 75] : $field.name cannot be resolved.
-2012-09-10 21:30:19,679 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:19,679 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:40,831 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:30:40,832 - Initializing Velocity, Calling init()...
-2012-09-10 21:30:40,832 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:30:40,832 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:30:40,832 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:30:40,832 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:30:40,832 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:30:40,832 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:30:40,838 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:30:40,856 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:30:40,859 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:30:40,861 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:30:40,863 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:30:40,865 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:30:40,866 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:30:40,869 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:30:40,872 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:30:40,875 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:30:40,877 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:30:40,944 - Created '20' parsers.
-2012-09-10 21:30:40,960 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:30:40,962 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:30:40,962 - Velocimacro : Default library not found.
-2012-09-10 21:30:40,962 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:30:40,962 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:30:40,962 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:30:40,962 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:30:41,026 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:30:41,048 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,048 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,048 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,048 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,048 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,049 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,050 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,051 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:30:41,058 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,058 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,059 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,060 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,061 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,062 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,063 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,064 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,065 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 39, column 16] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:30:41,066 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,730 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:32:36,731 - Initializing Velocity, Calling init()...
-2012-09-10 21:32:36,731 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:32:36,731 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:32:36,731 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:32:36,731 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:32:36,731 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:32:36,731 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:32:36,735 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:32:36,749 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:32:36,751 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:32:36,754 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:32:36,755 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:32:36,757 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:32:36,758 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:32:36,761 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:32:36,763 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:32:36,766 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:32:36,768 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:32:36,825 - Created '20' parsers.
-2012-09-10 21:32:36,840 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:32:36,841 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:32:36,841 - Velocimacro : Default library not found.
-2012-09-10 21:32:36,842 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:32:36,842 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:32:36,842 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:32:36,842 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:32:36,888 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:32:36,906 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,907 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,908 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,909 - Null reference [template 'templates/bean.vm', line 33, column 48] : $field.name cannot be resolved.
-2012-09-10 21:32:36,910 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,916 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,917 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,918 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,919 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,920 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,921 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 40, column 24] : $field.name cannot be resolved.
-2012-09-10 21:32:36,922 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:32:36,923 - Null reference [template 'templates/bean.vm', line 43, column 67] : $field.name cannot be resolved.
-2012-09-10 21:32:36,923 - Null reference [template 'templates/bean.vm', line 44, column 22] : $field.name cannot be resolved.
-2012-09-10 21:32:36,923 - Null reference [template 'templates/bean.vm', line 44, column 36] : $field.name cannot be resolved.
-2012-09-10 21:33:07,486 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:33:07,486 - Initializing Velocity, Calling init()...
-2012-09-10 21:33:07,486 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:33:07,486 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:33:07,486 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:33:07,487 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:33:07,487 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:33:07,487 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:33:07,491 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:33:07,506 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:33:07,508 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:33:07,510 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:33:07,512 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:33:07,514 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:33:07,515 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:33:07,518 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:33:07,521 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:33:07,524 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:33:07,526 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:33:07,631 - Created '20' parsers.
-2012-09-10 21:33:07,658 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:33:07,659 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:33:07,659 - Velocimacro : Default library not found.
-2012-09-10 21:33:07,659 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:33:07,659 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:33:07,660 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:33:07,660 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:33:07,720 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:33:07,736 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,737 - Null reference [template 'templates/bean.vm', line 33, column 17] : $field.clsName.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,742 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,742 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,742 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,743 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,744 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:07,744 - Null reference [template 'templates/bean.vm', line 43, column 44] : $field.getSimpleName() cannot be resolved.
-2012-09-10 21:33:32,784 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:33:32,784 - Initializing Velocity, Calling init()...
-2012-09-10 21:33:32,784 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:33:32,784 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:33:32,784 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:33:32,784 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:33:32,784 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:33:32,784 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:33:32,789 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:33:32,804 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:33:32,813 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:33:32,821 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:33:32,823 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:33:32,824 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:33:32,832 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:33:32,835 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:33:32,838 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:33:32,841 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:33:32,843 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:33:32,930 - Created '20' parsers.
-2012-09-10 21:33:32,945 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:33:32,947 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:33:32,947 - Velocimacro : Default library not found.
-2012-09-10 21:33:32,947 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:33:32,947 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:33:32,947 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:33:32,948 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:33:32,995 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:43:24,991 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:43:24,991 - Initializing Velocity, Calling init()...
-2012-09-10 21:43:24,991 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:43:24,991 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:43:24,991 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:43:24,991 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:43:24,991 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:43:24,991 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:43:24,995 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:43:25,009 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:43:25,011 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:43:25,014 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:43:25,015 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:43:25,017 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:43:25,018 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:43:25,021 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:43:25,024 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:43:25,026 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:43:25,028 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:43:25,085 - Created '20' parsers.
-2012-09-10 21:43:25,100 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:43:25,102 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:43:25,102 - Velocimacro : Default library not found.
-2012-09-10 21:43:25,102 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:43:25,102 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:43:25,102 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:43:25,102 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:43:25,146 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:43:46,568 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:43:46,569 - Initializing Velocity, Calling init()...
-2012-09-10 21:43:46,569 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:43:46,569 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:43:46,569 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:43:46,569 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:43:46,570 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:43:46,570 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:43:46,574 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:43:46,587 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:43:46,590 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:43:46,593 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:43:46,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:43:46,596 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:43:46,597 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:43:46,600 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:43:46,602 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:43:46,605 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:43:46,607 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:43:46,658 - Created '20' parsers.
-2012-09-10 21:43:46,673 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:43:46,675 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:43:46,675 - Velocimacro : Default library not found.
-2012-09-10 21:43:46,675 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:43:46,675 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:43:46,675 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:43:46,675 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:43:46,724 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:49:43,175 - Log4JLogChute initialized using file 'velocity.log'
-2012-09-10 21:49:43,175 - Initializing Velocity, Calling init()...
-2012-09-10 21:49:43,175 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2012-09-10 21:49:43,175 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-2012-09-10 21:49:43,175 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2012-09-10 21:49:43,175 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2012-09-10 21:49:43,175 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:49:43,175 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2012-09-10 21:49:43,179 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
-2012-09-10 21:49:43,195 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2012-09-10 21:49:43,197 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2012-09-10 21:49:43,200 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2012-09-10 21:49:43,201 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2012-09-10 21:49:43,203 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2012-09-10 21:49:43,205 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2012-09-10 21:49:43,208 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2012-09-10 21:49:43,210 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2012-09-10 21:49:43,214 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2012-09-10 21:49:43,216 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2012-09-10 21:49:43,277 - Created '20' parsers.
-2012-09-10 21:49:43,301 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2012-09-10 21:49:43,302 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
-2012-09-10 21:49:43,302 - Velocimacro : Default library not found.
-2012-09-10 21:49:43,302 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2012-09-10 21:49:43,302 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2012-09-10 21:49:43,302 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2012-09-10 21:49:43,303 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2012-09-10 21:49:43,348 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:32:57,969 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:32:57,985 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:32:57,988 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:32:57,990 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:32:57,992 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:32:57,994 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:32:57,995 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:32:57,998 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:32:58,003 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:32:58,007 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:32:58,009 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:32:58,057 - Created '20' parsers.
+2012-09-10 22:32:58,077 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:32:58,079 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:32:58,079 - Velocimacro : Default library not found.
+2012-09-10 22:32:58,079 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:32:58,079 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:32:58,079 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:32:58,079 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:32:58,131 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:32:58,150 - Null reference [template 'templates/sqlmapper.vm', line 17, column 25] : ${table.name} cannot be resolved.
+2012-09-10 22:32:58,156 - Null reference [template 'templates/sqlmapper.vm', line 31, column 25] : ${table.name} cannot be resolved.
+2012-09-10 22:32:58,158 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,160 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,160 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,160 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,160 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,161 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,161 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,161 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,162 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,162 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,162 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,163 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,163 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,163 - Null reference [template 'templates/sqlmapper.vm', line 35, column 65] : ${field.columnName} cannot be resolved.
+2012-09-10 22:32:58,163 - Null reference [template 'templates/sqlmapper.vm', line 44, column 29] : ${table.name} cannot be resolved.
+2012-09-10 22:33:11,783 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:33:11,784 - Initializing Velocity, Calling init()...
+2012-09-10 22:33:11,784 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:33:11,784 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:33:11,784 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:33:11,784 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:33:11,784 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:33:11,784 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:33:11,788 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:33:11,803 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:33:11,805 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:33:11,807 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:33:11,809 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:33:11,810 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:33:11,812 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:33:11,815 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:33:11,817 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:33:11,820 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:33:11,824 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:33:11,882 - Created '20' parsers.
+2012-09-10 22:33:11,902 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:33:11,904 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:33:11,908 - Velocimacro : Default library not found.
+2012-09-10 22:33:11,908 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:33:11,908 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:33:11,908 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:33:11,908 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:33:11,973 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:33:11,991 - Null reference [template 'templates/sqlmapper.vm', line 17, column 25] : ${table.name} cannot be resolved.
+2012-09-10 22:33:11,997 - Null reference [template 'templates/sqlmapper.vm', line 31, column 25] : ${table.name} cannot be resolved.
+2012-09-10 22:33:12,000 - Null reference [template 'templates/sqlmapper.vm', line 44, column 29] : ${table.name} cannot be resolved.
+2012-09-10 22:35:07,386 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:07,386 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:07,386 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:07,386 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:07,386 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:07,386 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:07,386 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:07,386 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:07,390 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:07,403 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:07,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:07,408 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:07,410 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:07,412 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:07,413 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:07,416 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:07,419 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:07,421 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:07,423 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:07,476 - Created '20' parsers.
+2012-09-10 22:35:07,497 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:07,498 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:07,498 - Velocimacro : Default library not found.
+2012-09-10 22:35:07,499 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:07,499 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:07,499 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:07,499 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:07,567 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:07,596 - Null reference [template 'templates/sqlmapper.vm', line 31, column 25] : ${table.name} cannot be resolved.
+2012-09-10 22:35:07,598 - Null reference [template 'templates/sqlmapper.vm', line 44, column 29] : ${table.name} cannot be resolved.
+2012-09-10 22:35:37,810 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:37,811 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:37,811 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:37,811 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:37,811 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:37,811 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:37,811 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:37,811 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:37,815 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:37,828 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:37,830 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:37,832 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:37,834 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:37,835 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:37,836 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:37,839 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:37,842 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:37,845 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:37,847 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:37,945 - Created '20' parsers.
+2012-09-10 22:35:37,966 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:37,968 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:37,968 - Velocimacro : Default library not found.
+2012-09-10 22:35:37,968 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:37,968 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:37,968 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:37,968 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:38,040 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,050 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,050 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,050 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,050 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,050 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,050 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,050 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,050 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,054 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,068 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,070 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,072 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,074 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,076 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,077 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,080 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,083 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,085 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,088 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,156 - Created '20' parsers.
+2012-09-10 22:35:49,175 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,178 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,178 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,178 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,178 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,178 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,178 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,213 - ResourceManager : found templates/dao.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,237 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,237 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,237 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,237 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,237 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,237 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,237 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,237 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,237 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,237 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,238 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,238 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,238 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,238 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,238 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,238 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,238 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,238 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,238 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,238 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,239 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,242 - Created '20' parsers.
+2012-09-10 22:35:49,242 - Created '20' parsers.
+2012-09-10 22:35:49,243 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,243 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,243 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,243 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,243 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,243 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,244 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,244 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,244 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,244 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,244 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,244 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,244 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,244 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,256 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,256 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,287 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,287 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,287 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:35:49,287 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,287 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,287 - Initializing Velocity, Calling init()...
+2012-09-10 22:35:49,288 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,288 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,288 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:35:49,288 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,288 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,288 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:35:49,288 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,288 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,288 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:35:49,288 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,288 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,288 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,289 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,289 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,289 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,290 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,291 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:35:49,299 - Created '20' parsers.
+2012-09-10 22:35:49,299 - Created '20' parsers.
+2012-09-10 22:35:49,299 - Created '20' parsers.
+2012-09-10 22:35:49,299 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,299 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,299 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:35:49,300 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,300 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,300 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:35:49,301 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,301 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,301 - Velocimacro : Default library not found.
+2012-09-10 22:35:49,301 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,301 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,301 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,301 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:35:49,301 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,301 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,301 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:35:49,314 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,314 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:35:49,314 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,261 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,261 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,261 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,261 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,261 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,261 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,261 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,261 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,265 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,278 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,280 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,282 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,284 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,286 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,287 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,289 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,292 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,295 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,297 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,355 - Created '20' parsers.
+2012-09-10 22:36:07,370 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,371 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,371 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,371 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,372 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,372 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,372 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,431 - ResourceManager : found templates/dao.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,447 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,447 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,447 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,447 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,447 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,447 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,447 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,447 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,447 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,447 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,448 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,448 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,448 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,448 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,448 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,448 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,448 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,448 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,448 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,448 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,449 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,451 - Created '20' parsers.
+2012-09-10 22:36:07,451 - Created '20' parsers.
+2012-09-10 22:36:07,451 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,451 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,452 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,452 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,452 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,452 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,452 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,452 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,452 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,452 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,452 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,452 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,452 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,452 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,459 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,459 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,481 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,481 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,481 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:07,481 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,481 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,481 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:07,481 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,481 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,481 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:07,481 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,481 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,481 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:07,481 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,481 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,481 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:07,482 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,482 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,482 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:07,482 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:07,482 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,482 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,482 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,482 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,482 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,482 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,483 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,484 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:07,485 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,485 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,485 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:07,487 - Created '20' parsers.
+2012-09-10 22:36:07,487 - Created '20' parsers.
+2012-09-10 22:36:07,487 - Created '20' parsers.
+2012-09-10 22:36:07,487 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,487 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,487 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:07,488 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,488 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,488 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:07,488 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,488 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,488 - Velocimacro : Default library not found.
+2012-09-10 22:36:07,488 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,488 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,488 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,488 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:07,489 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,489 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,489 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:07,501 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,501 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:07,501 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,249 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,250 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,250 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,250 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,250 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,250 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,250 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,250 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,254 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,268 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,271 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,273 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,275 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,276 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,278 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,280 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,283 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,286 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,288 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,356 - Created '20' parsers.
+2012-09-10 22:36:21,380 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,383 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,395 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,396 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,396 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,396 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,396 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,442 - ResourceManager : found templates/dao.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,477 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,477 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,477 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,477 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,477 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,477 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,477 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,477 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,477 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,477 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,477 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,477 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,477 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,477 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,477 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,477 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,478 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,478 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,478 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,478 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,479 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,480 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,482 - Created '20' parsers.
+2012-09-10 22:36:21,482 - Created '20' parsers.
+2012-09-10 22:36:21,482 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,482 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,483 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,483 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,484 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,484 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,484 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,484 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,484 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,484 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,484 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,484 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,484 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,484 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,496 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,496 - ResourceManager : found templates/bean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,529 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,529 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,529 - Log4JLogChute initialized using file 'velocity.log'
+2012-09-10 22:36:21,529 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,529 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,529 - Initializing Velocity, Calling init()...
+2012-09-10 22:36:21,529 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,529 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,529 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2012-09-10 22:36:21,529 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,529 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,529 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2012-09-10 22:36:21,530 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,530 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,530 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2012-09-10 22:36:21,530 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,530 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,530 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,530 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,530 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,530 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2012-09-10 22:36:21,531 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,531 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,531 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,532 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2012-09-10 22:36:21,535 - Created '20' parsers.
+2012-09-10 22:36:21,535 - Created '20' parsers.
+2012-09-10 22:36:21,535 - Created '20' parsers.
+2012-09-10 22:36:21,535 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,535 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,535 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2012-09-10 22:36:21,537 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,537 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,537 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2012-09-10 22:36:21,537 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,537 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,537 - Velocimacro : Default library not found.
+2012-09-10 22:36:21,537 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,537 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,537 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,537 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2012-09-10 22:36:21,537 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,537 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,537 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2012-09-10 22:36:21,551 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,551 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2012-09-10 22:36:21,551 - ResourceManager : found templates/sqlmapper.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

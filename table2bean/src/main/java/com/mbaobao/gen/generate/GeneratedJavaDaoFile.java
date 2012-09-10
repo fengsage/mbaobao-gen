@@ -4,9 +4,13 @@
  */
 package com.mbaobao.gen.generate;
 
+import java.io.File;
+
 import org.apache.velocity.VelocityContext;
 
+import com.mbaobao.gen.ConfigurationContext;
 import com.mbaobao.gen.entity.JavaBean;
+import com.mbaobao.gen.util.JavaBeansUtil;
 
 /**
  *                       
@@ -32,12 +36,29 @@ public class GeneratedJavaDaoFile extends GeneratedFile {
 	private static final String	TEMPLATE_NAME	= "dao.vm";
 	
 	@Override
-	public String genFileTempateName() {
+	public String getFileTempateName() {
 		return TEMPLATE_NAME;
 	}
 	
 	@Override
 	public void setContextData(VelocityContext velocityContext, JavaBean bean) {
+		velocityContext.put("java", bean);
+		
+		velocityContext.put("fieldName",
+			JavaBeansUtil.getCamelCaseString(bean.getClassName(), false));
+	}
+	
+	@Override
+	public String getFileExportPath(ConfigurationContext configContext, JavaBean bean) {
+		String path = configContext.getJavaDaoConfiguration().getTargetProject();
+		String _package = configContext.getJavaDaoConfiguration().getTargetPackage()
+			.replaceAll("\\.", File.separator);
+		return String.format("%s%s%s%s", path, File.separator, _package, File.separator);
+	}
+	
+	@Override
+	public String getFileExportFileName(JavaBean bean) {
+		return bean.getClassName() + "Dao.java";
 	}
 	
 }

@@ -1,4 +1,5 @@
 package com.mbaoabo.test.dao;
+
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Date;
@@ -68,20 +69,20 @@ public class DaoTest extends TestCase {
 		assertTrue(result > 0);
 		
 		//修改
-		user.setId(id);
-		user.setFlowerName("kuci");
-		result = userDao.update(user);
-		assertTrue(result > 0);
+		//		user.setId(id);
+		//		user.setFlowerName("kuci");
+		//		result = userDao.update(user);
+		//		assertTrue(result > 0);
 		//查询
 		User _u = new User();
 		_u.setId(id);
 		List<User> list = userDao.findUsersByPage(_u, 0, 1);
 		assertTrue(list.size() > 0);
 		_u = list.get(0);
-		assertTrue("kuci".equals(_u.getFlowerName()));
-		//删除
-		result = userDao.deleteByPrimary(id);
-		assertTrue(result > 0);
+		assertTrue("苦慈".equals(_u.getFlowerName()));
+		//		//删除
+		//		result = userDao.deleteByPrimary(id);
+		//		assertTrue(result > 0);
 		
 		session.commit();
 		session.close();
