@@ -1,4 +1,4 @@
-package com.mbaobao.gen;
+package com.mbaobao.gen.db;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,16 +8,18 @@ import java.sql.Statement;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
+import com.mbaobao.gen.configuration.JdbcConfiguration;
+
 public class DBConnection {
 	
 	private DataSource	dataSource;
 	
-	public DBConnection(Configuration configuration) {
+	public DBConnection(JdbcConfiguration configuration) {
 		PoolProperties p = new PoolProperties();
-		p.setDriverClassName(configuration.jdbcDriver);
-		p.setUrl(configuration.jdbcUrl);
-		p.setUsername(configuration.jdbcUsername);
-		p.setPassword(configuration.jdbcPassword);
+		p.setDriverClassName(configuration.getDriverClass());
+		p.setUrl(configuration.getUrl());
+		p.setUsername(configuration.getUsername());
+		p.setPassword(configuration.getPassword());
 		p.setJmxEnabled(true);
 		p.setTestWhileIdle(false);
 		p.setTestOnBorrow(true);
@@ -45,7 +47,7 @@ public class DBConnection {
 		return this.dataSource;
 	}
 	
-	public static Connection getConnection(Configuration configuration) {
+	public static Connection getConnection(JdbcConfiguration configuration) {
 		try {
 			Connection con = new DBConnection(configuration).getDataSource().getConnection();
 			return con;

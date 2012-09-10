@@ -59,7 +59,7 @@ public class JavaBean implements Serializable {
 		return className;
 	}
 	
-	/**
+	/**buildJavaBeanFiled
 	 * @param className
 	 * The className to set.
 	 */
@@ -82,13 +82,9 @@ public class JavaBean implements Serializable {
 		this.fields = fields;
 	}
 	
-	/**
-	 * @return
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
-		return "JavaBean [className=" + className + ", fields=" + fields + "]";
+		return String.format("JavaBean [className=%s, fields=%s]", className, fields);
 	}
 	
 }

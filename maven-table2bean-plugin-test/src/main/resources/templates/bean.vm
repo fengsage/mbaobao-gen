@@ -1,0 +1,36 @@
+#parse("include/copyright.vm")
+package ${env.entityPackage};
+
+import java.io.Serializable;
+
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
+// auto generated imports
+#foreach($field in $java.fields) 
+import $field.clsName.getName();
+#end
+
+/**
+ *
+#parse("include/description-java.vm")
+ */
+public class ${java.className} implements Serializable{
+
+	/** Comment for <code>serialVersionUID</code> */
+	private static final long serialVersionUID = -1L;
+
+#parse("include/do-fields.vm")
+
+	/**
+	* 重载toString方法
+	* @return
+	*
+	* @see java.lang.Object#toString()
+	*/
+	@Override
+    public String toString() {
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+    }
+}
+

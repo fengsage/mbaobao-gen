@@ -1,3 +1,4 @@
+package com.mbaoabo.test.dao;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Date;
@@ -11,7 +12,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import com.mbaoabo.test.bean.User;
-import com.mbaoabo.test.dao.UserDao;
 
 /**
  * www.mbaobao.com Inc.

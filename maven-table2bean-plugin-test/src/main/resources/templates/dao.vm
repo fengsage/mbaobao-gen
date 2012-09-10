@@ -1,4 +1,4 @@
-#parse("copyright.vm")
+#parse("include/copyright.vm")
 package ${env.daoPackage};
 
 import java.util.List;

@@ -36,49 +36,31 @@ public class Table implements Serializable {
 	
 	private List<TableColumn>	columns				= new ArrayList<TableColumn>();
 	
-	/**
-	 * 构建一个<code>Table.java</code>
-	 * @param name
-	 */
+	public Table() {
+		super();
+	}
+	
 	public Table(String name) {
 		super();
 		this.name = name;
 	}
 	
-	/**
-	 * @return Returns the name
-	 */
 	public String getName() {
 		return name;
 	}
 	
-	/**
-	 * @param name
-	 * The name to set.
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 	
-	/**
-	 * @return Returns the columns
-	 */
 	public List<TableColumn> getColumns() {
 		return columns;
 	}
 	
-	/**
-	 * @param columns
-	 * The columns to set.
-	 */
 	public void setColumns(List<TableColumn> columns) {
 		this.columns = columns;
 	}
 	
-	/**
-	 * @return
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Table [name=" + name + ", columns=" + columns + "]";

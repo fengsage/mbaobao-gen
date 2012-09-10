@@ -11,7 +11,12 @@
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-plugin-api</artifactId>
-			<version>2.0</version>
+			<version>3.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>3.0-alpha-2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mbaobao.gen</groupId>
@@ -25,18 +30,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<!--  
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.mbaobao.plugins</groupId>
-				<artifactId>maven-table2bean-plugin</artifactId>
-				<version>1.0-SNAPSHOT</version>
-				<configuration>
-					<goalPrefix>table2bean</goalPrefix>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-	-->
 </project>

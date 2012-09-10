@@ -2,7 +2,7 @@
  * www.mbaobao.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.mbaobao.gen;
+package com.mbaobao.plugins;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -11,6 +11,8 @@ import java.sql.Statement;
 
 import org.apache.log4j.Logger;
 
+import com.mbaobao.gen.ConfigurationContext;
+import com.mbaobao.gen.DBConnection;
 import com.mbaobao.gen.entity.Table;
 import com.mbaobao.gen.entity.TableColumn;
 import com.mbaobao.gen.entity.TableColumnEnum;
@@ -38,9 +40,9 @@ public class TableModel {
 	
 	private static final Logger	logger	= Logger.getLogger(TableModel.class);
 	
-	private Configuration		configuration;
+	private ConfigurationContext		configuration;
 	
-	public TableModel(Configuration configuration) {
+	public TableModel(ConfigurationContext configuration) {
 		this.configuration = configuration;
 	}
 	

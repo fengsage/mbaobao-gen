@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mbaoabo.test.dao.UserDao">
+<mapper namespace="com.mbaoabo.plugins.test.dao.UserDao">
 
-	<resultMap id="BASE-RESULT" type="com.mbaoabo.test.bean.User">
+	<resultMap id="BASE-RESULT" type="com.mbaoabo.plugins.test.bean.User">
 		<result property="id" column="id" />
 		<result property="username" column="username" />
 		<result property="flowerName" column="flower_name" />
@@ -125,7 +125,7 @@
 			#{offset},#{rows}
 	</select>
 	
-  	<insert id="insert" parameterType="com.mbaoabo.test.bean.User">
+  	<insert id="insert" parameterType="com.mbaoabo.plugins.test.bean.User">
   		INSERT INTO ac_user ( 
 			id,username,flower_name,password,phone,role_ids,app_ids,is_lock,is_del,add_user,last_login_ip,last_login_time,create_time,update_time			
   		) VALUES (
@@ -136,7 +136,7 @@
 		</selectKey>
   	</insert>
   	 
-  	<update id="update" parameterType="com.mbaoabo.test.bean.User">
+  	<update id="update" parameterType="com.mbaoabo.plugins.test.bean.User">
   		UPDATE
   			ac_user
 		<set>
