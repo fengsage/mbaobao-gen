@@ -12,8 +12,7 @@
 
 ###2.table2bean 直接根据数据库(目前只支持mysql) schemal导处java bean\java dao\mybatis mapper
 
-    目前还未完善.只能从main函数启动创建代码，后期使用maven plugin形式
-    启动函数：com.mbaobao.gen.GenMain
+    测试函数：com.mbaoabo.test.MyBatisGeneratorTest
 
 配置文件:config.properties
 
