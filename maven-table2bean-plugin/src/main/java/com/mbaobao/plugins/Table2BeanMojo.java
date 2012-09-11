@@ -4,12 +4,16 @@
  */
 package com.mbaobao.plugins;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 
 import com.mbaobao.gen.ConfigurationContext;
+import com.mbaobao.gen.ConfigurationParser;
+import com.mbaobao.gen.MyBatisGenerator;
 
 /**
  * @goal gen
@@ -22,15 +26,19 @@ public class Table2BeanMojo extends AbstractMojo {
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		getLog().info("===============Table2Bean===============");
 		long startTime = System.currentTimeMillis();
+		
+		ConfigurationParser parser = new ConfigurationParser();
+		
 		try {
-			ConfigurationContext config = new PropertiesConfiguration();
-			TableModel model = new TableModel(config);
+			ConfigurationContext context = parser.parseConfiguration(this.getClass()
+				.getClassLoader().getResourceAsStream("config.properties"));
 			
-			LOG.info(model);
+			//生成code
+			MyBatisGenerator generator = new MyBatisGenerator(context);
+			generator.generate();
 			
-			//			new GenFactory(config).export();
-		} catch (Exception e) {
-			e.printStackTrace();
+		} catch (IOException e) {
+			LOG.error("", e);
 		}
 		
 		getLog().info("Gen Finished total:" + (System.currentTimeMillis() - startTime));
