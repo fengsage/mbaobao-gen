@@ -35,3 +35,17 @@
 ###3.maven-tabl2bean-plugins 对table2bean的封装
 
 
+####1.添加pom
+
+    	<plugins>
+			<plugin>
+				<groupId>com.mbaobao.plugins</groupId>
+				<artifactId>maven-table2bean-plugin</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</plugin>
+		</plugins>
+
+####2.执行命令
+
+    mvn table2bean:gen
+
