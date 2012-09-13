@@ -4,6 +4,8 @@
  */
 package com.mbaobao.plugins;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
@@ -22,6 +24,11 @@ public class Table2BeanMojo extends AbstractMojo {
 	
 	private static final Logger	LOG	= Logger.getLogger(Table2BeanMojo.class);
 	
+	/**
+	 * @parameter default-value="table2bean.properties"
+	 */
+	private File				configuration;
+	
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		getLog().info("===============Table2Bean===============");
@@ -30,8 +37,14 @@ public class Table2BeanMojo extends AbstractMojo {
 		ConfigurationParser parser = new ConfigurationParser();
 		
 		try {
-			ConfigurationContext context = parser.parseConfiguration(this.getClass()
-				.getClassLoader().getResourceAsStream("config.properties"));
+			
+			if (!configuration.exists()) {
+				getLog().info("table2bean.properties 配置文件不存在!");
+				return;
+			}
+			
+			ConfigurationContext context = parser.parseConfiguration(new FileInputStream(
+				configuration));
 			
 			//生成code
 			MyBatisGenerator generator = new MyBatisGenerator(context);

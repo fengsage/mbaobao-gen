@@ -40,14 +40,16 @@ public class ConfigurationParser {
 	public ConfigurationContext parseConfiguration(InputStream inputStream) throws IOException {
 		properties = new Properties();
 		properties.load(inputStream);
-		
+		return parseConfiguration(properties);
+	}
+	
+	public ConfigurationContext parseConfiguration(Properties properties) throws IOException {
 		ConfigurationContext context = new ConfigurationContext();
 		context.setJavaDaoConfiguration(readJavaDao(properties));
 		context.setJdbcConfiguration(readJdbcConfig(properties));
 		context.setMapperConfiguration(readMapperConfig(properties));
 		context.setJavaBeanConfiguration(readJavaBeanConfig(properties));
 		context.setMappingConfiguration(readMappingConfig(properties));
-		
 		return context;
 	}
 	

@@ -1,4 +1,4 @@
-package com.mbaobao.gen.util;
+package com.mbaobao.plugins;
 
 import java.io.IOException;
 import java.io.InputStream;
