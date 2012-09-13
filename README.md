@@ -14,7 +14,7 @@
 
     测试函数：com.mbaoabo.test.MyBatisGeneratorTest
 
-配置文件:config.properties
+配置文件:table2bean.properties
 
     gen.jdbc.default.driver=com.mysql.jdbc.Driver
     gen.jdbc.default.url=jdbc:mysql://127.0.0.1/test
@@ -36,15 +36,19 @@
 
 ####1.添加pom
 
-    	<plugins>
-			<plugin>
-				<groupId>com.mbaobao.plugins</groupId>
-				<artifactId>maven-table2bean-plugin</artifactId>
-				<version>1.0-SNAPSHOT</version>
-			</plugin>
-		</plugins>
+	<plugins>
+		<plugin>
+			<groupId>com.mbaobao.plugins</groupId>
+			<artifactId>maven-table2bean-plugin</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</plugin>
+	</plugins>
+		
+####2.添加配置文件		
 
-####2.执行命令
+	table2bean.properties 放到项目根路径上即可
+
+####3.执行命令
 
     mvn table2bean:gen
 
