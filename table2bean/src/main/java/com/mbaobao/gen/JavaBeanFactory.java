@@ -108,6 +108,9 @@ public class JavaBeanFactory {
 			
 			try {
 				type = TableColumnEnum.getByCode(columnType);
+				if (type == null) {
+					type = TableColumnEnum.VARCHAR;
+				}
 			} catch (Exception e) {
 				throw new RuntimeException("无法识字段类型：" + columnType);
 			}
